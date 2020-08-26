@@ -1,4 +1,4 @@
-This spotify clone was created using react.js,material ui ,and spotify api  
+This spotify clone was created using react.js,context api ,material ui ,and spotify api  
 live demo link : https://spotify-clone-b976d.web.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
