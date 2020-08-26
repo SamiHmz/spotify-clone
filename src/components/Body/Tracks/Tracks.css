@@ -1,0 +1,26 @@
+.tracks {
+  min-height: 40%;
+  background-color: #111111;
+  padding: 20px 30px;
+}
+
+.tracks__top {
+  display: flex;
+  align-items: center;
+}
+.tracks__top > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.tracks__top__player {
+  color: #1db954;
+  font-size: 80px !important;
+}
+
+.traks__top__heart {
+  color: #1db954;
+}
+
+.traks__top__dots {
+  color: white;
+}

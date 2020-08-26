@@ -1,0 +1,95 @@
+.header {
+  height: 60%;
+  background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+.header__bottom {
+  display: flex;
+  color: #ffffff;
+}
+
+.header__bottom > img {
+  height: 280px;
+  width: 230px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.header__bottom_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header__bottom_info > h1 {
+  margin: 0;
+}
+.header__bottom_info > h4:first-child {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+}
+.header__bottom_info > h4:last-child {
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 22px;
+  margin-top: 20px;
+}
+
+.header__top {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+  height: 50px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 50px;
+  padding-right: 10px;
+  padding-left: 2px;
+  cursor: pointer;
+}
+
+.header__top .MuiAvatar-root {
+  height: 30px;
+  width: 30px;
+}
+.header__top > span {
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.header__top_logOut {
+  position: fixed;
+  top: 60px;
+  right: 50px;
+  background-color: black;
+  width: 11%;
+  height: 18%;
+  padding: 10px 15px;
+  visibility: hidden;
+}
+
+.header__top_logOut > h5 {
+  font-size: 14px;
+  color: white;
+  opacity: 0.6;
+  margin-top: 10px;
+}
+
+.header__top_logOut > h5:first-child {
+  margin-top: 0px;
+}
+.header__top_logOut > hr {
+  width: 100%;
+}
+
+.show {
+  visibility: visible !important;
+}

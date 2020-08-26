@@ -1,0 +1,34 @@
+.track {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  cursor: pointer;
+}
+.track:hover {
+  background-color: #282828;
+}
+
+.track h4 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.015em;
+  color: #fff;
+}
+
+.track h5 {
+  color: #fff;
+  opacity: 0.6;
+}
+.track__left {
+  display: flex;
+}
+
+.track__left__info {
+  margin-left: 15px;
+}
+
+.track__left__note {
+  color: #fff;
+  opacity: 0.6;
+}

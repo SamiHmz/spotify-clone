@@ -1,0 +1,14 @@
+.playlists {
+  overflow-y: scroll;
+  height: 40%;
+  margin-top: 10px;
+}
+
+.playlists > h4 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}

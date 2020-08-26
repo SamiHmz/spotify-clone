@@ -1,0 +1,31 @@
+.sideBare {
+  background-color: black;
+  flex: 0.17;
+  height: 88%;
+  padding-left: 20px;
+  color: #b3b3b3;
+}
+
+.logo {
+  object-fit: contain;
+  height: 100px;
+  width: 150px;
+}
+
+.sideBare__menu {
+  color: #b3b3b3;
+}
+
+.sideBare > h1 {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 30px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+}
+
+hr {
+  margin-right: 25px;
+  margin-top: 20px;
+  border: 1px solid #b3b3b3;
+}

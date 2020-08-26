@@ -1,0 +1,5 @@
+.body {
+  flex: 0.83;
+  height: 88%;
+  overflow-y: scroll;
+}

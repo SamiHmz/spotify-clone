@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useEffect } from "react";
+import Login from "./components/Login/Login";
+import SpotifyWebApi from "spotify-web-api-js";
+import { useDataLayer } from "./usefull/DataLayer";
+import { getTokenFromResponse } from "./usefull/spotify";
+import Home from "./components/Home/Home";
+
+export const spotify = new SpotifyWebApi();
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [{ user, token }, dispatch] = useDataLayer();
+  useEffect(() => {
+    const fetchData = async () => {
+      const token = getTokenFromResponse();
+      if (token) {
+        spotify.setAccessToken(token.access_token);
+        const me = await spotify.getMe();
+        dispatch({ type: "SET_USER", user: me });
+        dispatch({ type: "SET_TOKEN", token: token.access_token });
+      }
+    };
+    fetchData();
+  }, []);
+
+  return <div className="App">{token ? <Home /> : <Login />}</div>;
 }
 
 export default App;

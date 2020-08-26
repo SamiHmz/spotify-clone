@@ -1,0 +1,34 @@
+.menuItem {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 10px;
+  transition: 0.2s color ease-in;
+  cursor: pointer;
+}
+.menuItem:hover {
+  color: white;
+}
+
+.menuItem > svg {
+  margin-right: 15px;
+}
+
+.add-button > svg {
+  background-color: #b3b3b3;
+  color: black;
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+  padding: 4px;
+}
+.heart > svg {
+  background: linear-gradient(135deg, #450af5, #c4efd9);
+  color: white;
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+  padding: 8px;
+}
